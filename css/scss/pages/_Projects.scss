@@ -1,0 +1,105 @@
+.Projects{
+    margin-top: 150px;
+    @media #{$maxMobile} {
+        text-align: center;
+    }
+    .button-group{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        button{
+            background: transparent;
+            border: none;
+            color: $PColor;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            padding: 0 15px;
+            -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            text-transform: capitalize;
+            @media #{$maxMobile} {
+                padding: 0 5px;
+            }
+            &:hover{
+                color: #000000;
+            }
+        }
+        .is-checked{
+            color: #000000;
+        }
+    }
+    .glarry{
+        // background: aqua;
+        // height: 100%;
+        .element-item{
+            // margin-left: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 0;
+            .img-project{
+                width: 95%;
+                height: 100%;
+                overflow: hidden;
+                // position: relative;
+                
+                img{
+                    width: 98%;
+                    height: 255px;
+                background-size: cover;
+                }
+                .overlay{
+                    background: rgba(255, 255, 255, 0.85) none repeat scroll 0 0;
+                    height: calc(100% - 20px);
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%) translateX(-50%);
+                    transform: translateY(-50%) translateX(-50%);
+                    -webkit-transition: all 0.3s ease 0s;
+                    transition: all 0.3s ease 0s;
+                    width: calc(100% - 50px);
+                    text-align: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    .content{
+                        .icon{
+                            background: rgba(0, 0, 0, 0.35) none repeat scroll 0 0;
+                            border-radius: 50%;
+                            color: #fff;
+                            display: inline-block;
+                            font-size: 18px;
+                            height: 52px;
+                            line-height: 53px;
+                            margin-bottom: 15px;
+                            text-align: center;
+                            width: 52px;
+                        }
+                        h3{
+                            a{
+                                margin-top: 15px;
+                                margin-bottom: 8px;
+                                color: #232323;
+                                text-decoration: none;
+                                font-size: 29px;
+                            }
+                        }
+                        span{
+                            color: #858585;
+                            text-transform: capitalize;
+                            
+                        }
+                    }
+                    
+                }
+                &:hover{
+                    .overlay{
+                        visibility: initial;
+                        opacity: 1;
+                        transition: all 0.3s ease 0s;
+                    }
+                }
+            }
+        }
+        }
+}

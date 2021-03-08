@@ -1,0 +1,73 @@
+.contact{
+    margin-top: 100px;
+    padding-top: 80px;
+    .title-contact{
+        h3{
+            background: none;
+            line-height: 1;
+            padding-bottom: 0;
+        }
+        p{
+            margin-bottom: 50px;
+        }
+    }
+    .contact-form{
+        margin-top: 105px;
+        padding: 90px 70px 100px 70px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        .icon-cont{
+            @extend %icon;
+            font-size: 25px;
+            padding: 10px;
+            background: none;
+            @media #{$maxTap} {
+                font-size: 25px;
+            }
+            @media #{$maxMobile} {
+                margin-top: 15px;
+            }
+            &:hover{
+                background-color: #eeedfd;
+                color: $mainColor;
+            }
+        }
+        h3{
+            // font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 15px;
+            @media #{$maxTap} {
+                font-size: 16px;
+            }
+            @media #{$maxMobile} {
+                margin-top: 6px;
+            }
+        }
+    }
+    .form{
+        margin-top: 100px;
+        .form-group{
+            margin-bottom: 3rem;
+            .form-control-lg{
+                height: calc(1.5em + 1rem + 12px);
+                &:focus{
+                    box-shadow: none;
+                }
+                
+            }
+            textarea{
+                height: calc(1.5em + 14rem + 12px);
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            input[type="submit"]{
+                position: absolute;
+                right: 12px;
+                top: 200px;
+            }
+        }
+    }
+}

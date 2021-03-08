@@ -1,0 +1,52 @@
+// start abote me
+.abute{
+    margin-top: 110px;
+    @media #{$maxMobile} {
+        text-align: center;
+    }
+    .abute-lift{
+        // width: 95%;
+        .container{
+            height: 80%;
+            .profile-img{
+                background-color: #FFF;
+                background: rgba(0, 0, 0, 0) url(../img/bg/profile-bg.png) no-repeat scroll 0 100%;
+                margin-right: -30px;
+                padding-bottom: 40px;
+                padding-left: 40px;
+                img{
+                    border: 10px solid #e8e8e8;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .abute-right{
+        .container{
+            width: 100%;
+            padding-top: 35px;
+            padding-left: 8%;
+            
+            .title-abute{
+                margin-bottom: 35px;
+                @media #{$maxMobile} {
+                    width: 75%;
+                    margin: 30px auto;
+                }
+            }
+            p{
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 24px;
+                color: $icon-color;
+                margin-bottom: 50px;
+            }
+            .main-btn-dark{
+                @media #{$maxMobile} {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+// end abute 

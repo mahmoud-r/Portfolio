@@ -1,0 +1,35 @@
+// my skills
+.my-skils{
+    margin-top: 100px;
+    .title-skils{
+        margin-bottom: 40px;
+    }
+    .progress-item{
+        margin-top: 35px;
+        span{
+            color: $mainColor;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        }
+        .progress{
+            margin-top: 12px;
+            height: 6px;
+            overflow: initial !important;
+            .progress-bar {
+                background-color: transparent;
+                position: relative;
+                overflow: initial !important;
+                .value-label{
+                    position: absolute;
+                    right: 0;
+                    bottom: 20px;
+                    color: #333;
+                }
+            }
+        }
+    }
+    
+}
+// end my skills

@@ -1,0 +1,56 @@
+// start global 
+*{
+    @include prefixer(box-sizing, border-box, webkit moz);
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif}
+a{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+@for $i from 1 to 7 {
+    h#{$i} {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        color: $titleColor;
+        margin-top: 0px;
+        font-style: normal;
+        font-weight: 600;
+    }
+}
+.title {
+    background: rgba(0, 0, 0, 0) url(../img/bg/title-bg.png) repeat-y scroll 0 0;
+    line-height: 1;
+    padding: 5px 0 5px 15px;
+    font-size: 36px;
+    font-weight: 700;
+}
+p{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: $PColor;
+    margin-bottom: 15px;
+}
+%icon{
+                background-color: #eeedfd;
+                text-align: center;
+                border: 1px solid #000000;
+                border-radius: 50px 50px 50px 50px;
+                margin-right: 15px;
+                padding: 10px;
+    margin: 3px 10px 0 10px;
+                line-height: 1;
+                display: inline-block;
+                color: $mainColor;
+                font-size: 20px;
+                &:hover{
+                    background: #000000;
+                    color: #eeedfd;
+                }
+}
+// end global
