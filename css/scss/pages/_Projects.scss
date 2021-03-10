@@ -20,6 +20,7 @@
             text-transform: capitalize;
             @media #{$maxMobile} {
                 padding: 0 5px;
+                margin-top: 11px;
             }
             &:hover{
                 color: #000000;

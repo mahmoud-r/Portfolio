@@ -34,15 +34,15 @@ $(window).scroll(function () {
 
 // link active
 
-links.forEach (link =>{
+// links.forEach (link =>{
 
-  link.addEventListener('click',function(){
+//   link.addEventListener('click',function(){
       
-      links.forEach(lin=> lin.classList.remove('link-active'));
+//       links.forEach(lin=> lin.classList.remove('link-active'));
 
-      this.classList.add('link-active')
-  })
-});
+//       this.classList.add('link-active')
+//   })
+// });
 addEventListener('scroll' , function focas (){  
 
   for(const section of sections){
@@ -64,7 +64,6 @@ addEventListener('scroll' , function focas (){
         section.scrollIntoView({'behavior':'smooth'})
     })
       if(rect.top > -250 && rect.top <= 200 ){
-
           li.classList.add("link-active");
           li_menu.classList.add("link-active");
       }else{
