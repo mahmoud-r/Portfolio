@@ -55,13 +55,16 @@ addEventListener('scroll' , function focas (){
       
       const li_menu = document.querySelector(`a[data-nav=${id_sec}]`);
 
+      const menu_links = document.querySelector("#menu-navbar");
+
       li.addEventListener('click', function(){
 
         section.scrollIntoView({'behavior':'smooth'})
     })
       li_menu.addEventListener('click', function(){
 
-        section.scrollIntoView({'behavior':'smooth'})
+        section.scrollIntoView({'behavior':'smooth'});
+        menu_links.classList.remove('show')
     })
       if(rect.top > -250 && rect.top <= 200 ){
           li.classList.add("link-active");
